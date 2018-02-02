@@ -1,0 +1,15 @@
+<!--pages/customer/customer.wxml-->
+<view>
+  <view class="customer font-nomal">
+    <text>客服电话一：0123456789</text>
+    <image src="/images/phone-call.png"></image>
+  </view>
+  <view class="customer font-nomal">
+    <text>客服电话二：0123456789</text>
+    <image src="/images/phone-call.png"></image>
+  </view>
+  <view class="customer font-nomal">
+    <text>客服电话三：0123456789</text>
+    <image src="/images/phone-call.png"></image>
+  </view>
+</view>

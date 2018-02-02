@@ -1,0 +1,46 @@
+<!--pages/mall/mall.wxml-->
+<import src="/zanui/tab/index.wxml" />
+
+<view class="mall-search">
+  <text class="logo">logo</text>
+  <view class="search-box">
+    <input type="text" placeholder="华为" placeholder-color="#eeeeee" />
+    <image src='/images/search-ico.png'></image>
+  </view>
+</view>
+
+<view class="mall-container zan-row">
+  <!--  zanui侧边栏tab  改造 -->
+  <view class='zan-col zan-col-5 zan-font-14' id='mall-nav'>
+    <template is="zan-tab" data="{{ tab: { list, selectedId, scroll, height }, componentId: '0' }}">
+    </template>
+  </view>
+
+  <view class="mall-phones zan-col zan-col-19">
+    <view class="goods zan-font-12" bindtap='toOrderDetail'>
+      <image src="/images/goods1.jpg"></image>
+      <text class="goods-name">Apple iphone X 火爆开售</text>
+      <text class="price">¥ 8866.00</text>
+      <text class="integral">积分 5000</text>
+    </view>
+    <view class="goods zan-font-12" bindtap='toOrderDetail'>
+      <image src="/images/goods2.jpg"></image>
+      <text class="goods-name">Apple iphone 6s 最后一波</text>
+      <text class="price">¥ 8866.00</text>
+      <text class="integral">积分 5000</text>
+    </view>
+    <view class="goods zan-font-12" bindtap='toOrderDetail'>
+      <image src="/images/goods3.jpg"></image>
+      <text class="goods-name">Apple iphone 5 怎么还有</text>
+      <text class="price">¥ 8866.00</text>
+      <text class="integral">积分 5000</text>
+    </view>
+    <view class="goods zan-font-12" bindtap='toOrderDetail'>
+      <image src="/images/goods4.jpg"></image>
+      <text class="goods-name">ipad 9.7英寸 买买买</text>
+      <text class="price">¥ 8866.00</text>
+      <text class="integral">积分 5000</text>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,207 @@
+/* pages/order-detail/order-detail.wxss */
+
+page {
+    background-color: #F8F8F8;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.detail-container .header {
+    height: 85px;
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    position: relative;
+}
+
+.detail-container .header::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    height: 5px;
+    width: 94%;
+    left: 5px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #49c4d3 0%, #49c4d3 60%, transparent 50%);
+    background-size: 40px 5px;
+    background-repeat: repeat-x;
+}
+
+.detail-container .header .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-container .header .location {
+    line-height: 40px;
+}
+
+.detail-container .send {
+    margin: 0 0 5px;
+    padding: 5px 15px;
+    height: 55px;
+}
+
+.detail-container .send .check-box {
+    margin: 5px 0;
+}
+
+.detail-container .send label {
+    margin-right: 15px;
+}
+
+.detail-container .amount {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 15px 30px;
+    position: relative;
+}
+
+.amount .amount-box {
+    height: 20px;
+    width: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #eee;
+    border: solid 1px #cacaca;
+    border-radius: 5px;
+    line-height: 20px;
+    position: relative;
+}
+
+.amount .amount-box::before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    border-right: solid 1px #bababa;
+    left: 20px;
+}
+
+ .amount .amount-box::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    border-right: solid 1px #bcbabc;
+    right: 20px;
+} 
+
+.detail-container .total {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.detail-container .total view:nth-child(1) {
+    text-align: right;
+}
+
+.detail-container .total view:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 买家备注 */
+
+.detail-container .message {
+    padding: 5px 15px;
+    min-height: 80px;
+    position: relative;
+}
+
+.detail-container .message textarea {
+    /* padding: 10px 0 0 25px; */
+    width: 100%;
+}
+
+.detail-container .pay-way {
+    height: 110px;
+    padding: 5px 15px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.pay-way>view {
+    position: relative;
+    margin: 8px 10px;
+    height: 35px;
+}
+.pay-way .score{
+    position: relative;
+}
+.pay-way .wechat{
+    position: relative;
+}
+.pay-way image {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.pay-way .check-pay{
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  height: 80px;
+}
+.pay-way .check-pay radio-group{
+  display: flex;
+  flex-direction: column;
+}
+.pay-way .check-pay radio-group label{
+  height: 40px;
+  line-height: 40px;
+}
+/* 底部提交按钮 */
+
+.detail-btn {
+    position: fixed;
+    display: flex;
+    height: 50px;
+    border-top: solid 1px #cccccc;
+    bottom: 0;
+    line-height: 50px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.detail-btn>view:nth-child(1) {
+    width: 70vw;
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+    /* background-color: #bababa; */
+}
+
+.detail-btn>view:nth-child(2) {
+    width: 30vw;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: #2AD4E3;
+}
+.detail-btn>view:nth-child(2) button{
+    text-align: center;
+    color: #fff;
+    background-color: #2AD4E3;
+    border-radius: 0;
+    border:none;
+    line-height: 50px;
+    height: 100%;
+}
+
+/* 底部线条 */
+
+.line-bottom::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: solid 1px rgb(243, 242, 242);
+}

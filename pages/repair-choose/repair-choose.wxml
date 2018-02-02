@@ -1,0 +1,71 @@
+<!--pages/repair-choose/repair-choose.wxml-->
+<view class="repair-choose">
+  <view class="banner-box">
+    <image class="banner" src="/images/goods3.jpg" />
+  </view>
+  <view class="zan-cell zan-cell--access bg-fff cell-bottom-specl zan-font-16">
+    <view class="zan-cell__bd zan-c-gray-darker">维修机型</view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap='toBack'>Iphone X</view>
+  </view>
+  <view class="server-box bg-fff zan-font-12 zan-c-gray">
+    <view>
+      <image src="/images/select-icon.png"></image>
+      <text>免费上门</text>
+    </view>
+    <view>
+      <image src="/images/select-icon.png"></image>
+      <text>20分钟快修</text>
+    </view>
+    <view>
+      <image src="/images/select-icon.png"></image>
+      <text>修完后付款</text>
+    </view>
+    <view>
+      <image src="/images/select-icon.png"></image>
+      <text>24小时上门服务</text>
+    </view>
+  </view>
+
+
+  <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
+    <view class="zan-cell__bd zan-c-gray-darker">机型配色</view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray">选择您的机型配色</view>
+  </view>
+
+  <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
+    <view class="zan-cell__bd zan-c-gray-darker">内存选择</view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray">选择您的机型内存</view>
+  </view>
+
+  <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
+    <view class="zan-cell__bd zan-c-gray-darker">版本选择</view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray">选择您的机型版本</view>
+  </view>
+
+  <view class="zan-cell bg-fff cell-bottom zan-font-16">
+    <view class="zan-cell__bd zan-c-gray-darker">故障维修方案</view>
+    <view class="zan-cell__ft zan-c-gray">维修说明</view>
+  </view>
+
+  <view class="zan-cell bg-fff cell-bottom zan-font-16">
+    <view class="zan-cell__bd zan-c-gray-darker">屏幕问题/旧屏回收</view>
+    <view class="zan-cell__ft zan-c-gray zan-font-30" style='font-weight:200;'>+</view>
+  </view>
+
+
+  <view style="height:20px;"></view>
+</view>
+
+<view class="rc-btn">
+  <view class="bg-fff">
+    <image src="/images/customer.png" />
+    <text>客服</text>
+  </view>
+  <view class="bg-fff">
+    <image src="/images/call.png" />
+    <text>拨号</text>
+  </view>
+  <view>
+    <text>提交订单</text>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/mall-order/mall-order.wxml-->
+<import src="/zanui/tab/index.wxml" />
+<template is="zan-tab" data="{{ tab:{ list, selectedId }, componentId: 'orderTab' }}"></template>
+
+<view>
+  <!--单个商品 -->
+  <view class="zan-panel">
+    <view class="zan-card">
+      <view class="zan-card__thumb">
+        <image class="zan-card__img" src="/images/erji.gif" mode="aspectFit"></image>
+      </view>
+      <view class="zan-card__detail">
+        <view class="zan-card__detail-row">
+          <view class="zan-card__detail-row zan-ellipsis--l2">
+            华为苹果vivo通用耳机P9荣耀8手机入耳式重低音耳塞 华为苹果vivo通用耳机P9荣耀8手机入耳式重低音耳塞 华为
+          </view>
+        </view>
+        <view class="zan-card__detail-row zan-c-gray-darker">
+          <view class="zan-card__left-col">
+            规格：3号漂x1
+          </view>
+        </view>
+        <view class="zan-card__detail-row zan-c-gray-darker">
+          <view class="zan-card__left-col zan-c-red">￥ 145.00</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="mall-order-footer zan-font-14">
+    <view>
+      <text>下单时间</text>
+      <text>2018-1-15 14:20</text>
+    </view>
+    <view>
+      <text>订单编号</text>
+      <text>1022322345332243</text>
+    </view>
+  </view>
+
+
+
+
+</view>

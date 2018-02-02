@@ -1,0 +1,110 @@
+// pages/order-detail/order-detail.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    items: [
+      { name: 'post', value: '邮寄' },
+      { name: 'self', value: '自提', checked: 'true' },
+    ],
+    pay: [
+      { name: "score"},
+      { name: "wexin", checked: 'true' }
+    ],
+    number: 1,
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+  bindTextAreaBlur: function (e) {
+    console.log(e.detail.value)
+  },
+
+  /**
+   * 增减产品数量
+   */
+  subtrct: function () {
+    if (this.data.number === 1) {
+        return;
+    } else {
+      this.setData({
+        number: --this.data.number
+      });
+    }
+  },
+  add: function () {
+    this.setData({
+      number: ++this.data.number
+    });
+  },
+/**
+ * 表单提交
+ */
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
+
+  /**
+   * 路由
+   */
+  toLocation: function () {
+    wx.navigateTo({
+      url: '/pages/location/location',
+    })
+  },
+})

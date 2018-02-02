@@ -1,0 +1,60 @@
+/* pages/order/order.wxss */
+@import "/zanui/index.wxss";
+page{
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.order-top{
+    height:50px;
+    padding:0 15px;
+    line-height:50px;
+    color:#46C6D1;
+    letter-spacing:3px; 
+    background-color: #ffffff;
+}
+.order-banner{
+    width: 100%;
+    height: 350rpx;
+}
+
+.order-nav-box{
+  margin-bottom: 5px;
+}
+
+.order-nav-box .zan-tab .zan-tab__bd{
+  border: none !important;
+}
+.order-nav-box .zan-tab__item--selected .zan-tab__title {
+  color: #2AD4E3;
+}
+
+.order-phones{
+    padding: 10px 15px;
+    background-color: #ffffff;
+    align-items: center;
+    margin-bottom:10px;     
+}
+
+.order-phone{
+    border: solid 1px #76B5B8;
+    padding: 8px 3px;
+    border-radius: 8px;
+    height: 25px;
+    width: 80%;
+    margin: 5px 10%;
+    text-align: center;
+    line-height: 25px;
+    display: inline-block;
+    color: #76B5B8;
+}
+
+.order-footer{
+    display: flex;
+    flex-direction:column;
+    line-height: 30px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    align-items: center;
+    color: #323232;
+}

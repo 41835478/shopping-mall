@@ -1,0 +1,27 @@
+/* pages/repair-list/repair-list.wxss */
+
+page{
+    background-color: #F2F2F2;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.repair-list-nav{
+  margin-bottom: 10px;
+}
+
+.bottom-line::after{
+    content: "";
+    height: 1px;
+    width: 68%;
+    position: absolute;
+    border-bottom: solid 1px rgb(231, 229, 229);
+    bottom: 0;
+    right: 0;
+}
+
+.repair-list-footer{
+    background-color: #ffffff;
+    margin-top: 8px;
+    overflow: hidden;
+}

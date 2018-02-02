@@ -1,0 +1,64 @@
+<!--pages/score-detail/score-detail.wxml-->
+<view class='score'>
+  <image src="/images/score.png"></image>
+  <view class="score-text">
+    <text class="zan-font-30 zan-c-red">999</text>
+    <text class="zan-font-14">积分</text> 
+    <text class="zan-font-12">积分说明</text>
+  </view>
+</view>
+
+<view class='score-introduce zan-font-12'>
+  <text>积分说明xxx</text>
+</view>
+
+<view class='score-line zan-font-10 zan-c-gray'>
+  <text>积分明细</text>
+</view>
+
+
+
+<!-- 单个积分明细 -->
+<view class="zan-card">
+  <view class="zan-card__thumb score-img-box">
+    <image class="zan-card__img score-img-left" src="/images/goods1.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="zan-card__detail left-margin score-bottom">
+    <view class="zan-card__detail-row">
+      <view class="zan-ellipsis--l2 zan-font-12">
+        分享奖励
+      </view>
+    </view>
+    <view class="zan-card__detail-row zan-c-gray-darker">
+      <view class="zan-card__left-col zan-font-10">
+        2018-01-22 13:23:34
+      </view>
+    </view>
+    <view class="zan-card__detail-row zan-font-12 add-score">
+      <view class="zan-card__right-col zan-c-red">+5</view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="zan-card">
+  <view class="zan-card__thumb score-img-box">
+    <image class="zan-card__img score-img-left" src="/images/goods2.jpg" mode="aspectFit"></image>
+  </view>
+  <view class="zan-card__detail left-margin score-bottom">
+    <view class="zan-card__detail-row">
+      <view class="zan-ellipsis--l2 zan-font-12">
+        分享奖励
+      </view>
+    </view>
+    <view class="zan-card__detail-row zan-c-gray-darker">
+      <view class="zan-card__left-col zan-font-10">
+        2018-01-22 13:23:34
+      </view>
+    </view>
+    <view class="zan-card__detail-row zan-font-12 add-score">
+      <view class="zan-card__right-col zan-c-red">+15</view>
+    </view>
+  </view>
+</view>

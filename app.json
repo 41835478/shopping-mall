@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/repair-choose/repair-choose",
+    "pages/mall/mall",
+    "pages/order-detail/order-detail",
+    "pages/location-edit/location-edit",
+    "pages/qrcode-share/qrcode-share",
+    "pages/location/location",
+    "pages/repair-list/repair-list",
+    "pages/order/order",
+    "pages/mall-order/mall-order",
+    "pages/score-detail/score-detail",
+    "pages/customer/customer",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#46C6D1",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "./images/repair.png",
+        "selectedIconPath": "./images/repair-selected.png",
+        "text": "立即下单"
+      },
+      {
+        "pagePath": "pages/mall/mall",
+        "text": "积分商城",
+        "iconPath": "./images/shopping-mall.png",
+        "selectedIconPath": "./images/shopping-mall-selected.png",
+        "color": "#ffffff"
+      },
+      {
+        "pagePath": "pages/customer/customer",
+        "iconPath": "./images/customer-service.png",
+        "selectedIconPath": "./images/customer-service-selected.png",
+        "text": "客服中心"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "./images/user-home.png",
+        "selectedIconPath": "./images/user-home-selected.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

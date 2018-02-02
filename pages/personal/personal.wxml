@@ -1,0 +1,76 @@
+<!--pages/personal/personal.wxml-->
+<view id='p-wapper'>
+  <view class='personal-radius'>
+  </view>
+  <view class="black-bg">
+  </view>
+  <view class='personal-box zan-font-14'>
+    <image class='personal-info' src='/images/avatar.jpg'></image>
+    <text>Ander</text>
+  </view>
+
+  <view class='personal-bag zan-font-14'>
+    <view class='coupon'>
+      <text>0</text>
+      <view>优惠券</view>
+    </view>
+    <text style="float:left; color:#eeeeee;line-height:45px; font-size:120%;">|</text>
+    <view class='mycheaper'>
+      <text>45</text>
+      <view class="zan-font-14">我的积分</view>
+    </view>
+  </view>
+
+  <view class='mall-order'>
+    <view class='title'>
+      <text class="zan-font-16">商城订单</text>
+      <text class="zan-font-12" bindtap="toMallOrder" data-id="all">查看全部订单</text>
+    </view>
+    <view class='order-item'>
+      <view class='item-list' bindtap="toMallOrder" data-id="topay">
+        <image src='/images/order.png'></image>
+        <text class="zan-font-14">待付款</text>
+      </view>
+      <text class='line'>|</text>
+      <view class='item-list' bindtap="toMallOrder" data-id="tosend">
+        <image src='/images/order.png'></image>
+        <text class="zan-font-14">待发货</text>
+      </view>
+      <text class='line'>|</text>
+      <view class='item-list' bindtap="toMallOrder" data-id="send">
+        <image src='/images/order.png'></image>
+        <text class="zan-font-14">待收货</text>
+      </view>
+      <text class='line'>|</text>
+      <view class='item-list' bindtap="toMallOrder" data-id="sign">
+        <image src='/images/order.png'></image>
+        <text class="zan-font-14">已完成</text>
+      </view>
+    </view>
+  </view>
+
+
+<view class="personal-list">
+  <view class="zan-cell zan-cell--access" bindtap="toLocation">
+    <image class="cell-img" src="/images/location-icon.png"></image>
+    <view class="zan-cell__bd">收货地址</view>
+    <view class="zan-cell__ft"></view>
+  </view>
+  <view class="zan-cell zan-cell--access" bindtap="toQrcodeShare">
+    <image class="cell-img" src="/images/sell-center.png"></image>
+    <view class="zan-cell__bd">分销中心</view>
+    <view class="zan-cell__ft"></view>
+  </view>
+  <view class="zan-cell zan-cell--access" bindtap="toScoreDetail">
+    <image class="cell-img" src="/images/order-detail.png"></image>
+    <view class="zan-cell__bd">积分明细</view>
+    <view class="zan-cell__ft"></view>
+  </view>
+  <view class="zan-cell zan-cell--access" bindtap="toRepairList">
+    <image class="cell-img" src="/images/prepair.png"></image>
+    <view class="zan-cell__bd">维修订单</view>
+    <view class="zan-cell__ft"></view>
+  </view>
+</view>
+
+</view>

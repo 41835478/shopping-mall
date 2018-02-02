@@ -1,0 +1,113 @@
+/* pages/repair-choose/repair-choose.wxss */
+
+page {
+    background-color: #F8F8F8;
+}
+
+.repair-choose {
+    display: flex;
+    flex-direction: column;
+}
+
+.repair-choose .banner-box {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    position: relative;
+}
+
+.repair-choose .banner-box::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-bottom: solid 1px rgb(212, 210, 210);
+}
+
+.repair-choose .banner-box .banner {
+    height: 100%;
+    width: 150px;
+}
+
+.server-box {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px 0;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+    /* margin-bottom: 15px; */
+}
+
+.server-box>view {
+    flex-direction: row;
+    margin-right: 15px;
+    height: 30px;
+}
+
+.server-box>view image {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.cell-bottom-specl::after {
+    left: 0;
+}
+
+.cell-bottom {
+    margin-bottom: 10px;
+}
+
+.cell-bottom::after {
+    left: 0;
+}
+
+.rc-btn {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-top: solid 1px #ccc;
+    position: fixed;
+    bottom: 0;
+    line-height: 50px;
+   width: 100%;
+}
+
+.rc-btn image {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px;
+}
+.rc-btn>view{
+    text-align: center;
+}
+.rc-btn>view:nth-child(1) {
+    width: 28%;
+    position: relative;
+}
+.rc-btn>view:nth-child(1)::after{
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border-right: solid 1px rgb(234, 230, 230);
+}
+.rc-btn>view:nth-child(2) {
+    width: 28%;
+}
+
+.rc-btn>view:nth-child(3) {
+    width: 44%;
+    background-color: #2AD4E3;
+    color: #fff;
+}

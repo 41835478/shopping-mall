@@ -1,0 +1,15 @@
+<!--pages/location/location.wxml-->
+
+<view class="location-box">
+  <view class="header bg-fff zan-font-14">
+    <view class="user-info">
+      <text>李小龙 男士</text>
+      <text>15829837564</text>
+    </view>
+    <view class="location zan-ellipsis--l2">四川省 成都市 武侯区 桐梓林北路12号</view>
+    <view class='edit' bindtap='toLocationEdit'>
+      <image src="/images/edit.png"></image>
+      <text>编辑</text>
+    </view>
+  </view>
+</view>

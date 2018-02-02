@@ -1,0 +1,12 @@
+<!--pages/qrcode-share/qrcode-share.wxml-->
+
+
+<view class="share-wapper">
+  <image class="avatar" src='/images/avatar.jpg'></image>
+  <text class="zan-font-14 share-text">你怎么不知道</text>
+  <image class="qrcode" src='/images/erweima.gif'></image>
+  <text class="zan-font-12 share-text">手机坏了就找修呗</text>
+</view>
+<view class="share-footer">
+    <button class="zan-btn zan-btn--primary zan-font-14">保存图片</button>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/order/order.wxml-->
+<import src="/zanui/tab/index.wxml" />
+
+<view class="order-wapper">
+  <view class="order-top zan-font-16">
+    修呗·成都站
+  </view>
+
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+    <block>
+      <swiper-item>
+        <image class="order-banner" src="/images/lingshitu1.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="order-banner" src="/images/lingshi2.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image class="order-banner" src="/images/lingshi3.png"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <view class='order-nav-box'>
+    <template is="zan-tab" data="{{ tab: { list, selectedId,  scroll, height }, componentId: 'Apple' }}">
+    </template>
+  </view>
+
+
+  <view class="zan-row order-phones  zan-font-14">
+    <view class="zan-col zan-col-8" bindtap='toRepairChoose'>
+      <text class="order-phone">iphone x</text>
+    </view>
+    <view class="zan-col zan-col-8" bindtap='toRepairChoose'>
+      <text class="order-phone">iphone 8p</text>
+    </view>
+    <view class="zan-col zan-col-8" bindtap='toRepairChoose'>
+      <text class="order-phone">iphone 8</text>
+    </view>
+    <view class="zan-col zan-col-8" bindtap='toRepairChoose'>
+      <text class="order-phone">iphone 7p</text>
+    </view>
+    <view class="zan-col zan-col-8" bindtap='toRepairChoose'>
+      <text class="order-phone">iphone 7</text>
+    </view>
+  </view>
+
+  <image class="order-banner" src="/images/lingshi2.png"></image>
+
+  <view class="order-footer zan-font-12">
+    <text>电话：028-62676867</text>
+    <text>成都修呗科技有限公司</text>
+    <text>地址：成都太升南路288号锦天国际C座901室</text>
+  </view>
+
+</view>

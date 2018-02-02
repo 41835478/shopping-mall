@@ -1,0 +1,110 @@
+<!--pages/order-detail/order-detail.wxml-->
+<view class='detail-container'>
+  <form bindsubmit="formSubmit">
+
+
+    <view class="header bg-fff zan-font-14" bindtap='toLocation'>
+      <view class="user-info">
+        <text>李小龙 男士</text>
+        <text>15829837564</text>
+      </view>
+      <view class="location">四川省 成都市 武侯区 桐梓林北路12号</view>
+    </view>
+
+    <view class="bg-fff send">
+      <text class="zan-font-14">送货方式</text>
+      <radio-group class="check-box zan-font-12" name="type">
+        <label class="radio" wx:for="{{items}}" wx:key>
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+
+
+    <view class="zan-card bg-fff">
+      <view class="zan-card__thumb">
+        <image class="zan-card__img" src="/images/goods4.jpg" mode="aspectFit"></image>
+      </view>
+      <view class="zan-card__detail">
+        <view class="zan-card__detail-row">
+          <view class="zan-card__right-col">¥ 999.99</view>
+          <view class="zan-card__left-col zan-ellipsis--l2">
+            Iphone X
+            <input value="{{'产品id'}}" name='id' style='display:none'></input>
+          </view>
+        </view>
+        <view class="zan-card__detail-row zan-c-gray-darker">
+          <view class="zan-card__right-col">x2</view>
+          <view class="zan-card__left-col zan-font-10">
+            颜色：银色
+          </view>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="amount zan-font-14 bg-fff line-bottom">
+      <text>购买数量：</text>
+      <view class="amount-box">
+        <text class="subtrct" bindtap='subtrct'>-</text>
+        <text>{{number}}</text>
+        <input value='{{number}}' name="number" style='display:none;'></input>
+        <text class="add" bindtap='add'>+</text>
+      </view>
+    </view>
+
+    <view class="total bg-fff zan-font-14 line-bottom">
+      <view>共1件</view>
+      <view>
+        <text>合计</text>
+        <text>￥ {{number * 999.99}}</text> </view>
+    </view>
+
+
+    <view class="message bg-fff line-bottom">
+      <text class="zan-font-14">买家备注</text>
+      <view>
+        <textarea class="zan-font-14" bindblur="bindTextAreaBlur" auto-height placeholder="选填：对本次交易的说明" name="illustrate" />
+      </view>
+    </view>
+
+
+
+
+
+
+
+    <view class="pay-way bg-fff">
+      <text class='zan-font-14'>支付方式</text>
+      <view class="score line-bottom">
+        <image src='/images/useScore.png'></image>
+        <text class='zan-font-14'>积分</text>
+      </view>
+      <view class="wechat">
+        <image src='/images/weixin.png'></image>
+        <text class='zan-font-14'>微信</text>
+      </view>
+      <view></view>
+      <view class='check-pay'>
+        <radio-group name="pay">
+          <label wx:for="{{pay}}" wx:key>
+            <radio value="{{item.name}}" checked="{{item.checked}}" />
+          </label>
+        </radio-group>
+      </view>
+    </view>
+
+
+
+
+
+    <view class="detail-btn bg-fff zan-font-14">
+      <view>
+        应付积分 50000
+      </view>
+      <view>
+        <button class='zan-font-14' formType="submit">提交订单</button>
+      </view>
+    </view>
+  </form>
+</view>

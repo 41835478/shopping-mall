@@ -1,0 +1,136 @@
+/* pages/personal/personal.wxss */
+
+@import "/zanui/index.wxss";
+page {
+  background-color: #F2F2F2;
+}
+
+#p-wapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.personal-radius {
+  height: 200px;
+  width: 120vw;
+  background-color: #2ad4e3;
+  border-radius: 0 0 100% 100%;
+  position: absolute;
+  left: -10vw;
+  top: -100px;
+  z-index: -1;
+}
+
+.black-bg {
+  height: 170px;
+  background-color: #ffffff;
+  position: absolute;
+  width: 100vw;
+  z-index: -2;
+}
+
+.personal-box {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: dashed 1px #eee;
+  z-index: 999;
+  height: 140px;
+}
+
+.personal-box .personal-info {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 100%;
+  border: solid 2px #fff;
+}
+
+.personal-bag {
+  height: 50px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.personal-bag>view {
+  width: 48%;
+  float: left;
+  text-align: center;
+}
+
+.personal-bag>view:nth-child(2) {
+  float: right;
+}
+
+.coupon text {
+  color: #c43671;
+}
+
+.mycheaper text {
+  color: #2cd3e3;
+}
+
+/* 商城订单 */
+
+.mall-order {
+  display: flex;
+  flex-direction: column;
+  height: 112px;
+  padding: 0 15px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+.mall-order .title text:nth-child(1) {
+  float: left;
+}
+
+.mall-order .title text:nth-child(2) {
+  float: right;
+  color: #929292;
+}
+
+.mall-order .title {
+  border-bottom: dashed 1px #eee;
+  height: 40px;
+  line-height: 40px;
+}
+
+.mall-order .order-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+.order-item .item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60%；;
+}
+
+.order-item .item-list image {
+  width: 25px;
+  height: 25px;
+}
+
+.order-item .line {
+  color: #e0e0e0;
+  line-height: 40px;
+  align-self: flex-start;
+}
+
+.personal-list {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.cell-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

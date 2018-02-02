@@ -1,0 +1,12 @@
+/* pages/customer/customer.wxss */
+
+.customer{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+}
+.customer image{
+    width: 25px;
+    height: 25px;
+}

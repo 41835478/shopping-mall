@@ -1,0 +1,16 @@
+/* pages/mall-order/mall-order.wxss */
+
+page {
+    background-color: #F2F2F2;
+}
+
+.mall-order-footer {
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: #666;
+    line-height: 30px;
+}
+
+.mall-order-footer view text:nth-child(1) {
+    margin-right: 10px;
+}

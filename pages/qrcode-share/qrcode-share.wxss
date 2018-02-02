@@ -1,0 +1,38 @@
+/* pages/qrcode-share/qrcode-share.wxss */
+
+
+.share-wapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+
+.share-wapper .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.share-wapper .qrcode{
+    width: 40vw;
+    height: 40vw;
+    margin: 60px 0 10px;
+}
+
+.share-wapper .share-text{
+    line-height: 30px;
+}
+.share-wapper::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    border-top: solid 1px rgb(236, 235, 235);
+    top: 130px;
+}
+
+.share-footer{
+    padding: 0 25px;
+}

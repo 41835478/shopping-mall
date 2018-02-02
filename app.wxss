@@ -1,0 +1,63 @@
+/**app.wxss**/
+/* 全局字体设置 */
+@import "/zanui/index.wxss";
+.font-nomal{
+  font-size: 100%;
+  color: #000;
+}
+.font-small{
+  font-size: 90%;
+}
+
+.font-smaller{
+  font-size: 80%;
+}
+.font-smallest{
+  font-size: 70%;
+}
+.font-big{
+  font-size: 110%;
+}
+.font-biger{
+  font-size: 120%;
+}
+.font-bigest{
+  font-size: 130%;
+}
+
+
+image{
+  display: block;
+}
+.zan-card{
+  background-color: #fff;
+}
+.bg-fff{
+  background-color: #fff;
+}
+
+
+
+ /* 
+  *  全局样式
+  *  下单时间  和  单实付   到时有需要可拆分组件
+  */
+
+.mall-order-footer {
+  background-color: #ffffff;
+  padding: 5px 15px;
+  color: #666;
+  line-height: 30px;
+}
+
+.mall-order-footer view text:nth-child(1) {
+  margin-right: 10px;
+}
+
+
+/* tab切换select样式 */
+
+.zan-tab__item--selected .zan-tab__title{
+  color: #2AD4E3;
+  border-color: #2AD4E3;
+}

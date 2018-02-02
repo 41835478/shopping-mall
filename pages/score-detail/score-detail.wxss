@@ -1,0 +1,106 @@
+/* pages/score-detail/score-detail.wxss */
+
+.score {
+    position: relative;
+    text-align: center;
+    top: 0;
+    height: 140px;
+}
+
+.score image {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.score>.score-text {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.score>.score-text text:nth-child(2){
+    color: rgb(229, 67, 22);
+   line-height: 10px; 
+}
+.score>.score-text text:nth-child(3){
+    color: rgb(57, 55, 55);
+    line-height: 80px;
+}
+
+.score-introduce{
+  padding: 0 20px;
+}
+
+.score-line {
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.score-line::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 40%;
+    border-top: solid 1px rgb(232, 232, 232);
+    left: 10px;
+    top: 10px;
+}
+
+.score-line::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 40%;
+    border-top: solid 1px rgb(232, 232, 232);
+    right: 10px;
+    top: 10px;
+}
+
+/* 
+ * 在zanui之上修改的积分明细卡片 
+ * 图片减少   左间距减少
+ */
+
+.score-img-box {
+    width: 60px;
+    height: 60px;
+}
+
+.score-img-left {
+    width: 60px;
+    height: 60px;
+}
+
+.left-margin {
+    margin-left: 70px;
+}
+
+.score-bottom {
+    position: relative;
+    height: 66px;
+}
+
+.score-bottom::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-top: solid 1px rgb(232, 232, 232);
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.add-score {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}

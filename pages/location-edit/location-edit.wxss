@@ -1,0 +1,61 @@
+/* pages/location-edit/location-edit.wxss */
+page{
+  background-color: #F8F8F8;
+}
+.l-edit .name{
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0 0 15px;
+  position: relative;
+}
+
+.l-edit .name input{
+  height: 40px;
+  margin-top: 5px;
+  width: 80%;
+  border-bottom: solid 1px #f4f2f2;
+  border-radius: 0 0 8px 8px; 
+}
+
+
+.l-edit .sex{
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.l-edit .sex label{
+  margin-right: 10px;
+}
+
+
+
+.l-edit .cell-phone input{
+width: 100%;
+text-align: left;
+}
+
+
+
+
+
+.l-edit .local-detail{
+  display: flex;
+  flex-direction: column;
+}
+.l-edit .local-detail .title{
+  align-self: flex-start;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.l-edit .submit-btn{
+  position: fixed;
+  width: 100%;
+  bottom: 20px;
+}
+.l-edit .submit-btn button{
+  background-color: #2AD4E3;
+  border-radius: 5px;  
+}

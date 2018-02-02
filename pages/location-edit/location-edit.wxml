@@ -1,0 +1,57 @@
+<!--pages/location-edit/location-edit.wxml-->
+<view class='l-edit zan-font-16'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="bg-fff name zan-row">
+      <view class="zan-col zan-col-5">联系人</view>
+      <input class='zan-col zan-col-19' name="name" placeholder="请填写联系人姓名" />
+    </view>
+
+    <view class="bg-fff sex zan-row">
+      <radio-group class="zan-col zan-col-18 zan-col-offset-6" name="radio-group">
+        <label>
+          <radio value="radio1" />男士</label>
+        <label>
+          <radio value="radio2" />女士</label>
+      </radio-group>
+    </view>
+
+
+    <view class="zan-cell bg-fff cell-phone zan-row zan-font-16">
+      <view class="zan-cell__bd zan-col zan-col-7">联系电话</view>
+      <view class="zan-cell__ft zan-col zan-col-17">
+        <input class='zan-col zan-col-19' name="phone" type='number' placeholder="请填写联系电话" />
+      </view>
+    </view>
+
+    <!-- 三级联动 -->
+    <view class="zan-cell zan-cell--access bg-fff zan-row zan-font-16">
+      <view class="zan-cell__bd zan-col zan-col-8">省市县区</view>
+      <view class="bg-fff zan-col zan-col-16">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{'请选择'}}">
+          <view>
+            <view class='zan-ellipsis'>
+              {{region[0]}} {{region[1]}} {{region[2]}}
+            </view>
+            <view style='display:none'>
+              <input name="province" value="{{region[0]}}" />
+              <input name="city" value='{{region[1]}}' />
+              <input name="county" value='{{region[2]}}' />
+            </view>
+          </view>
+        </picker>
+      </view>
+      <view class="zan-cell__ft"></view>
+    </view>
+
+    <view class="bg-fff zan-row zan-cell local-detail zan-font-16">
+      <view class='zan-col zan-col-7 title'>详细地址</view>
+      <textarea class='zan-col zan-col-20' placeholder="填写详细地址，不少于5个字" name="location" />
+    </view>
+    <view class="submit-btn zan-row" bindtap='toBack'>
+      <button class='zan-btn zan-btn--primary zan-col zan-col-20 zan-col-offset-2' formType="submit">
+        确认
+      </button>
+    </view>
+  </form>
+
+</view>
