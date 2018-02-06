@@ -119,9 +119,18 @@ page {
 }
 
 .order-item .line {
-  color: #e0e0e0;
-  line-height: 40px;
-  align-self: flex-start;
+  position: relative;
+  height: 30px;
+  width: 1px;
+}
+
+.order-item .line::after{
+  content: "";
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  border-right: solid 1px #e5e5e5;
+  right: 0;
 }
 
 .personal-list {

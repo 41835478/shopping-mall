@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/repair-choose/repair-choose",
     "pages/mall/mall",
+    "pages/repair-choose/repair-choose",
     "pages/order-detail/order-detail",
     "pages/location-edit/location-edit",
     "pages/qrcode-share/qrcode-share",

@@ -31,17 +31,17 @@
         <image src='/images/order.png'></image>
         <text class="zan-font-14">待付款</text>
       </view>
-      <text class='line'>|</text>
+      <text class='line'></text>
       <view class='item-list' bindtap="toMallOrder" data-id="tosend">
         <image src='/images/order.png'></image>
         <text class="zan-font-14">待发货</text>
       </view>
-      <text class='line'>|</text>
+      <text class='line'></text>
       <view class='item-list' bindtap="toMallOrder" data-id="send">
         <image src='/images/order.png'></image>
         <text class="zan-font-14">待收货</text>
       </view>
-      <text class='line'>|</text>
+      <text class='line'></text>
       <view class='item-list' bindtap="toMallOrder" data-id="sign">
         <image src='/images/order.png'></image>
         <text class="zan-font-14">已完成</text>

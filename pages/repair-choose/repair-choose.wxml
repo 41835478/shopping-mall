@@ -27,34 +27,49 @@
   </view>
 
 
-  <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
+  <!-- <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
     <view class="zan-cell__bd zan-c-gray-darker">机型配色</view>
-    <view class="zan-cell__bd zan-cell__ft zan-c-gray">选择您的机型配色</view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap="toggleBottomPopup" data-type="color">{{choseType.color}}</view>
   </view>
 
   <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
     <view class="zan-cell__bd zan-c-gray-darker">内存选择</view>
-    <view class="zan-cell__bd zan-cell__ft zan-c-gray">选择您的机型内存</view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap="toggleBottomPopup" data-type="memory">{{choseType.memory}}</view>
   </view>
 
   <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-16">
     <view class="zan-cell__bd zan-c-gray-darker">版本选择</view>
-    <view class="zan-cell__bd zan-cell__ft zan-c-gray">选择您的机型版本</view>
-  </view>
+    <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap="toggleBottomPopup" data-type="release">{{choseType.release}}</view>
+  </view> -->
 
-  <view class="zan-cell bg-fff cell-bottom zan-font-16">
+  <view class="zan-cell bg-fff zan-font-16 repair-way">
     <view class="zan-cell__bd zan-c-gray-darker">故障维修方案</view>
     <view class="zan-cell__ft zan-c-gray">维修说明</view>
   </view>
 
-  <view class="zan-cell bg-fff cell-bottom zan-font-16">
+  <!-- <view class="zan-cell bg-fff zan-font-14 screen">
     <view class="zan-cell__bd zan-c-gray-darker">屏幕问题/旧屏回收</view>
-    <view class="zan-cell__ft zan-c-gray zan-font-30" style='font-weight:200;'>+</view>
+    <view class="zan-cell__ft zan-c-gray">
+      <image style='width:20px; height:20px;' src='/images/add-btn.png'></image>
+    </view>
+  </view> -->
+  <!-- <view class='problem'>
+    <radio-group class="radio-group zan-font-14" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}" wx:key>
+        <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+      </label>
+    </radio-group>
+  </view> -->
+  <view class="zan-cell bg-fff check-item-box" wx:for="{{items}}" wx:key>
+    <view class="zan-cell__icon zan-font-16 check-item zan-icon {{ item.checked == 'true' ? 'zan-icon-checked': 'zan-icon-check' }}"     
+          bindtap='checkItem' data-id="{{item.id}}"></view>
+    <view class="zan-cell__bd">{{item.value}}</view>
+    <view class="zan-cell__ft zan-ellipsis">详细说明</view>    
   </view>
 
 
-  <view style="height:20px;"></view>
 </view>
+<view style='margin-bottom:50px;' ></view>
 
 <view class="rc-btn">
   <view class="bg-fff">

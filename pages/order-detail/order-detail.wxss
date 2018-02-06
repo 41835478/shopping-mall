@@ -166,7 +166,6 @@ page {
     bottom: 0;
     line-height: 50px;
     width: 100%;
-    z-index: 9999;
 }
 
 .detail-btn>view:nth-child(1) {
@@ -203,5 +202,65 @@ page {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     border-bottom: solid 1px rgb(243, 242, 242);
+}
+.detail-container .zan-cell::after{
+  left: 0;
+}
+
+
+/* 弹出框 */
+.popup-example--bottom .zan-popup__container {
+  left: 0;
+  right: 0;
+}
+.close-btn{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 15px;
+  vertical-align: middle;
+  top: 13px;
+  z-index: 3;
+}
+
+.popup-title{
+  position: relative;
+  height: 50px;
+  margin: 0;
+  padding: 0px 15px;
+}
+.popup-title::after{
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  border-top: solid 1px rgb(232, 234, 234);
+  bottom: 0;
+  left: 0;
+}
+
+.popup-title view{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.popup-main{
+  padding: 20px 15px ;
+}
+.popup-main text{
+  height: 40px;
+  min-width: 80px;
+  border: solid 1px #e5e5e5;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px 6px;
+  padding: 0 8px;
 }

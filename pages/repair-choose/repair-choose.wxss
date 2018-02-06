@@ -68,6 +68,26 @@ page {
 .cell-bottom::after {
     left: 0;
 }
+.repair-way::after{
+  left: 0;
+}
+.screen::after{
+  border: none;
+}
+
+
+.problem .radio-group .radio{
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  padding: 3px 15px;
+}
+.check-item-box.zan-cell::after{
+  left: 0;
+}
+.check-item{
+  color: #2AD4E3;
+}
 
 .rc-btn {
     display: flex;
@@ -111,3 +131,5 @@ page {
     background-color: #2AD4E3;
     color: #fff;
 }
+
+

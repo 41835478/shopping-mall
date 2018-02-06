@@ -5,9 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    items: [
+      { id: '1', value: '屏幕问题' },
+      { id: '2', value: '旧屏回收' },
+      { id: '3', value: '内存问题' },
+      { id: '4', value: '显卡问题' },
+      { id: '5', value: '死机关机' },
+      { id: '6', value: '无法启动' },
+    ]
   },
-
+  checkItem(e) {
+    console.log(e.currentTarget.dataset.id)
+    var aimItem = this.data.items.filter(function (item) {
+      if (item.id == e.currentTarget.dataset.id){
+        item.checked = item.checked == 'true' ? 'false': 'true';
+      }
+      return item;
+    })
+    this.setData({
+      items: aimItem
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -69,5 +87,9 @@ Page({
     wx.navigateBack({
       delta: 1
     })
-  }
+  },
+  radioChange: function (e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+  },
+
 })

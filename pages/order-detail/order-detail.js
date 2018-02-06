@@ -14,6 +14,15 @@ Page({
       { name: "wexin", checked: 'true' }
     ],
     number: 1,
+    showBottomPopup:false,     // 底部弹框显示与否
+    typeList: [],
+    choseType:{
+      title: "34",
+      color: "选择机型配色",
+      memory: "选择机型内存",
+      release: "选择机型版本",
+      screen: ""
+    }
   },
 
   /**
@@ -97,6 +106,48 @@ Page({
  */
   formSubmit: function (e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
+  },
+   /**
+   * 点击时候触发事件 拿到产品信息  取出数组 赋值list 判断type 赋值
+   * 数据渲染在页面
+   * {{title}} 标题
+   * {{list}}  内容 ： 数组  选择之后参数替换（如配色）
+   */
+  toggleBottomPopup (e) {
+    const type = e.currentTarget.dataset.type
+    switch (type) {
+      case "color":
+        console.log('color');
+        this.setData({
+          typeList: ["红褐色", "黄色", "卡其色", "天蓝色"],
+          ['choseType.title']: "机型配色"
+        });
+        break;
+      case "memory":
+        console.log('memory');
+        this.setData({
+          typeList: ["4M", "8M", "16G", "32G"],
+          ['choseType.title']: "内存选择",
+        });
+        break;
+      case "release":
+        console.log('release');
+        this.setData({
+          typeList: ["旗舰版", "标准版", "普通版", "定制版", "迷你版", "超神版", "天花乱坠版"],
+          ['choseType.title']: "版本选择",
+        });
+        break;
+      case "screen":
+        console.log('screen');
+        this.setData({
+          typeList: ["5.8 英寸", "5.5 英寸", "4.7 英寸"],
+          ['choseType.title']: "屏幕问题选择",
+        });
+        break;
+    }
+    this.setData({
+      showBottomPopup: !this.data.showBottomPopup
+    });
   },
 
   /**

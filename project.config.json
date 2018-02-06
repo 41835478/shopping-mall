@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.1",
 	"appid": "wx0f96353582b8c7b0",
-	"projectname": "shopping-mall",
+	"projectname": "my-shopping-mall",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

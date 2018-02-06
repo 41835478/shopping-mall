@@ -61,10 +61,27 @@
     </view>
 
 
+
+    <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-14">
+      <view class="zan-cell__bd zan-c-gray-darker">机型配色</view>
+      <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap="toggleBottomPopup" data-type="color">{{choseType.color}}</view>
+    </view>
+
+    <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-14">
+      <view class="zan-cell__bd zan-c-gray-darker">内存选择</view>
+      <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap="toggleBottomPopup" data-type="memory">{{choseType.memory}}</view>
+    </view>
+
+    <view class="zan-cell zan-cell--access bg-fff cell-bottom zan-font-14">
+      <view class="zan-cell__bd zan-c-gray-darker">版本选择</view>
+      <view class="zan-cell__bd zan-cell__ft zan-c-gray" bindtap="toggleBottomPopup" data-type="release">{{choseType.release}}</view>
+    </view>
+
     <view class="message bg-fff line-bottom">
       <text class="zan-font-14">买家备注</text>
       <view>
-        <textarea class="zan-font-14" bindblur="bindTextAreaBlur" auto-height placeholder="选填：对本次交易的说明" name="illustrate" />
+        <textarea class="zan-font-14" bindblur="bindTextAreaBlur" auto-height name="illustrate" />
+        <!-- placeholder="选填：对本次交易的说明"  -->
       </view>
     </view>
 
@@ -107,4 +124,21 @@
       </view>
     </view>
   </form>
+</view>
+
+
+<!-- 底部弹出框 -->
+<view class="container">
+  <view class="popup-example--bottom zan-popup zan-popup--bottom {{ showBottomPopup ? 'zan-popup--show' : ''}}">
+    <view class="zan-popup__mask" catchtap="toggleBottomPopup"></view>
+    <view class="zan-popup__container">
+      <view class="zan-btns popup-title zan-font-16  zan-c-gray-darker">
+        <image class='close-btn' src='/images/close-btn.png' catchtap="toggleBottomPopup"></image>
+        <view>{{choseType.title}}</view>
+      </view>
+      <view class='popup-main zan-font-14'>
+        <text wx:for="{{typeList}}" wx:key>{{item}}</text>
+      </view>
+    </view>
+  </view>
 </view>
