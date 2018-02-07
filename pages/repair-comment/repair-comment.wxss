@@ -1,0 +1,81 @@
+/* pages/repair-comment/repair-comment.wxss */
+
+.comment-img{
+  height: 180rpx;
+  width: auto;
+  display: block;
+  padding: 5px 10px;
+}
+
+.choose-outer {
+  float: left;
+  margin: 5px;
+}
+
+.choose-box {
+  border: solid 1px #ccc;
+  width: 150rpx;
+  height: 150rpx;
+  position: relative;
+}
+
+.choose-box::after {
+  content: '';
+  height: 100rpx;
+  width: 1px;
+  position: absolute;
+  background-color: #ccc;
+  left: 50%;
+  top: 25rpx;
+}
+
+.choose-box::before {
+  content: '';
+  height: 1px;
+  width: 100rpx;
+  position: absolute;
+  background-color: #ccc;
+  left: 25rpx;
+  top: 50%;
+}
+
+.img-box {
+  width: 150rpx;
+  height: 150rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  margin: 5px;
+}
+
+.getImg {
+  float: left;
+}
+
+
+.comment-box{
+  border: solid 1px #ccc;
+  margin: 15px 10px;
+}
+.comment-box textarea{
+  height: 150px !important;
+}
+/* 打分 */
+.grade {
+  padding: 0 10px;
+}
+.grade text {
+  float: left;
+}
+.grade multiple-rate, .grade multiple-rate text {
+  float: left;
+}
+.submit-btn{
+  padding: 15px;
+  clear: both;
+
+}
+.submit-btn .zan-btn--primary{
+  background-color: #2AD4E3;
+}

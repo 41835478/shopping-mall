@@ -1,11 +1,11 @@
-// pages/personal/personal.js
-
+// pages/my-judge/my-judge.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-  
+    judgeImg: ['/images/goods1.jpg', '/images/goods2.jpg', '/images/goods3.jpg', '/images/goods4.jpg',]
   },
 
   /**
@@ -62,42 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  /**
-   * 路由  全是路由
-   */
-  toScoreDetail: function() {
-    wx.navigateTo({
-      url: '/pages/score-detail/score-detail',
-    })
-  },
-  
-  toRepairList: function() {
-    wx.navigateTo({
-      url: '/pages/repair-list/repair-list',
-    })
-  },
-  toMallOrder: function(e) {
-    const currectId = e.currentTarget.dataset.id;
-    wx.navigateTo({
-      url: '/pages/mall-order/mall-order?id=' + currectId ,
-    })
-  },
-  toLocation:function() {
-    wx.navigateTo({
-      url: '/pages/location/location',
-    })
-  },
-  toQrcodeShare:function() {
-    wx.navigateTo({
-      url: '/pages/qrcode-share/qrcode-share',
-    })
-  },
-  toMyJudge: function () {
-    wx.navigateTo({
-      url: '/pages/my-judge/my-judge',
-    })
   }
-  
 })

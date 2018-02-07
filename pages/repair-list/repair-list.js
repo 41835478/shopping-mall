@@ -92,5 +92,10 @@ Page(extend({}, Tab, {
         console.log(" 加载已维修 ")
         break;
     }
+  },
+  toRepairComment() {
+    wx.navigateTo({
+      url: '/pages/repair-comment/repair-comment',
+    })
   }
 }))

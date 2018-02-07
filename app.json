@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/mall/mall",
+    "pages/my-judge/my-judge",
+    "pages/repair-comment/repair-comment",
     "pages/repair-choose/repair-choose",
     "pages/order-detail/order-detail",
     "pages/location-edit/location-edit",

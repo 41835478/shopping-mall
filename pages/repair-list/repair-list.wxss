@@ -13,15 +13,17 @@ page{
 .bottom-line::after{
     content: "";
     height: 1px;
-    width: 68%;
+    width: 100%;
     position: absolute;
     border-bottom: solid 1px rgb(231, 229, 229);
     bottom: 0;
     right: 0;
 }
+.service-judge{
+  color: #2AD4E3;
+}
 
 .repair-list-footer{
     background-color: #ffffff;
-    margin-top: 8px;
     overflow: hidden;
 }

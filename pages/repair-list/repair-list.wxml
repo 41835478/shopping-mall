@@ -6,13 +6,18 @@
   </template>
 </view>
 
-<view>
   <!-- 单个产品 -->
+<view>
   <view class="zan-card bottom-line">
     <view class="zan-card__thumb">
       <image class="zan-card__img" src="/images/erji.gif" mode="aspectFit"></image>
     </view>
     <view class="zan-card__detail">
+
+      <view class="zan-card__right-col service-judge" bindtap='toRepairComment'>
+        {{'点击评价'}}
+      </view>
+    
       <view class="zan-card__detail-row">
         <view class="zan-card__left-col zan-ellipsis--l2 zan-font-14">
           iphone X
@@ -31,57 +36,29 @@
       </view>
     </view>
   </view>
-
-  <view class="zan-card bottom-line">
-    <view class="zan-card__thumb">
-      <image class="zan-card__img" src="/images/goods2.jpg" mode="aspectFit"></image>
-    </view>
-    <view class="zan-card__detail">
-      <view class="zan-card__detail-row">
-        <view class="zan-card__left-col zan-ellipsis--l2 zan-font-14">
-          iphone 8
-        </view>
+  <view class="repair-list-footer">
+    <view class="zan-cell">
+      <view class="zan-cell__bd">
+        <view class="zan-cell__text">商品金额</view>
       </view>
-      <view class="zan-card__detail-row">
-        <view class="zan-card__left-col zan-ellipsis--l2 zan-font-14">
-          坏了 任性就要修
-        </view>
-        <view class="zan-card__left-col zan-font-10 zan-c-gray">
-          颜色：彩色
-        </view>
+      <view class="zan-cell__ft">￥ 2342.00</view>
+    </view>
+    <view class="zan-cell">
+      <view class="zan-cell__bd">
+        <view class="zan-cell__text">实付金额</view>
       </view>
-      <view class="zan-card__detail-row zan-c-gray-darker">
-        <view class="zan-card__right-col zan-font-12">¥ 2343.99</view>
+      <view class="zan-cell__ft zan-c-red">￥ 2342.00</view>
+    </view>
+
+    <view class="mall-order-footer zan-font-14">
+      <view>
+        <text>下单时间</text>
+        <text>2018-1-15 14:20</text>
       </view>
-    </view>
-  </view>
-
-</view>
-
-
-<view class="repair-list-footer">
-  <view class="zan-cell">
-    <view class="zan-cell__bd">
-      <view class="zan-cell__text">商品金额</view>
-    </view>
-    <view class="zan-cell__ft">￥ 2342.00</view>
-  </view>
-  <view class="zan-cell">
-    <view class="zan-cell__bd">
-      <view class="zan-cell__text">实付金额</view>
-    </view>
-    <view class="zan-cell__ft zan-c-red">￥ 2342.00</view>
-  </view>
-
-
-  <view class="mall-order-footer zan-font-14">
-    <view>
-      <text>下单时间</text>
-      <text>2018-1-15 14:20</text>
-    </view>
-    <view>
-      <text>订单编号</text>
-      <text>1022322345332243</text>
+      <view>
+        <text>订单编号</text>
+        <text>1022322345332243</text>
+      </view>
     </view>
   </view>
 </view>

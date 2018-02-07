@@ -1,0 +1,32 @@
+/* pages/my-judge/my-judge.wxss */
+.judge-header{
+  margin-top: 10px;
+  margin-left: 15px;
+  border-left: solid 3px #2AD4E3;
+}
+.judge-box {
+  height: 25px;
+  padding: 5px 15px;
+}
+.judge-box .user-info text{
+  line-height: 22px;
+}
+.judge-box .user-info image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  float: left;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.judge-content{
+  margin-top: 5px;
+}
+
+.judge-image{
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+  margin: 5px;
+  margin-top: 15px;
+}

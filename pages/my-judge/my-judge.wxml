@@ -1,0 +1,14 @@
+<!--pages/my-judge/my-judge.wxml-->
+<view class='judge-header'>
+  <text>最新评论</text>
+</view>
+<view class='judge-box'>
+  <view class='user-info zan-font-16'>
+    <image src="/images/avatar.jpg"></image>
+    <text>飞踹教练</text>
+  </view>
+  <view class='zan-font-14 judge-content'>
+    <text>直考虑写一个功能齐全的完整 Nodejs 项目,但苦于没有找到合适的类型,而且后台...API 接口文档 接口文档地址 部分截图 部分前台页面.</text>
+  </view>
+  <image class='judge-image' wx:for="{{judgeImg}}" src='{{item}}' wx:key></image>
+</view>

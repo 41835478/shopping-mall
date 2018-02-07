@@ -1,0 +1,38 @@
+<!--pages/repair-comment/repair-comment.wxml-->
+<import src="/zanui/field/index.wxml" />
+
+<view class='comment-img'>
+  <view class='imgs-box' style="background-image:url('{{item}}')" bindtap='previewImg' wx:for="{{imgSrc}}" wx:key class='img-box'>
+  </view>
+  <view class='choose-outer'>
+    <view bindtap='getImg' wx:if="{{ imgSrc.length != 4 }}" class='choose-box'>
+    </view>
+  </view>
+</view>
+
+<view class='comment-box'>
+  <template is="zan-field" data="{{ type: 'textarea', placeholder: '请输入评论', value }}"></template>
+</view>
+
+<view class='grade'>
+  <text>服务打分：</text>
+  <multiple-rate bindchange="handleChange" rate="{{rate1}}" data-rate="1">
+  </multiple-rate>
+    <!-- <text style='margin-left:20px;'>{{ rate1 }}分</text> -->
+</view>
+<view class='grade'>
+  <text>技术打分：</text>
+  <multiple-rate bindchange="handleChange" rate="{{rate2}}" data-rate="2">
+  </multiple-rate>
+    <!-- <text style='margin-left:20px;'>{{ rate2 }}分</text> -->
+</view>
+<view class='grade'>
+  <text>整体打分：</text>
+  <multiple-rate bindchange="handleChange" rate="{{rate3}}" data-rate="3">
+  </multiple-rate>
+  <!-- <text style='margin-left:20px;'>{{ rate3 }}分</text> -->
+</view>
+
+<view class='submit-btn'>
+  <button class="zan-btn zan-btn--primary">提交评论</button>
+</view>

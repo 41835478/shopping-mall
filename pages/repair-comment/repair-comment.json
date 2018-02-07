@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#2AD4E3",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "评论",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "multiple-rate": "../../components/multiple-rate/multiple-rate"
+  }
+}

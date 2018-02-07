@@ -71,6 +71,11 @@
     <view class="zan-cell__bd">维修订单</view>
     <view class="zan-cell__ft"></view>
   </view>
+  <view class="zan-cell zan-cell--access" bindtap="toMyJudge">
+    <image class="cell-img" src="/images/judge.png"></image>
+    <view class="zan-cell__bd">我的评价</view>
+    <view class="zan-cell__ft"></view>
+  </view>
 </view>
 
 </view>
